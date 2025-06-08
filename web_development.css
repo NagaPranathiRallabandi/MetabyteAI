@@ -460,3 +460,27 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+  .logo-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 60px;
+}
+
+.logo-img-small {
+  height: 40px;
+  padding-bottom: 5px;
+}
+
+/* Make sure both stay side-by-side and shrink nicely on mobile */
+@media (max-width: 600px) {
+  .logo-img {
+    height: 50px;
+  }
+  .logo-img-small {
+    height: 35px;
+  }
+}

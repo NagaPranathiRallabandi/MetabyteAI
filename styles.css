@@ -59,7 +59,7 @@ body {
 .subtitle {
   font-size: 1.2rem;
   margin-top: 1rem;
-  color: #bee9b7;
+  color: linear-gradient(90deg, #1fdfd8, #39ff14);
   letter-spacing: 1px;
   white-space: nowrap;
   overflow: hidden;

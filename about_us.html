@@ -3,106 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>About Us - Metabyte AI</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="about_us.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="navbar-logo">
-                    <a href="index.html" style="text-decoration: none;" class="logo-flex">
-                      <img src="./Assets/images/logo1.png" alt="Metabyte Logo" class="logo-img">
-                      <img src="./Assets/images/logo2.png" alt="Metabyte Logo" class="logo-img-small">
-                    </a>
-                </div>
-
-                <div class="menu-toggle" id="menu-toggle">
-                    <i class="fa fa-bars"></i>
-                </div>
-
-                <ul class="navbar-links" id="navbar-links">
-                    <li><a href="index.html" class="nav-link">HOME</a></li>
-                    <li><a href="index.html#services-section" class="nav-link">SERVICES</a></li>
-                    <li><a href="about_us.html" class="nav-link">ABOUT US</a></li>
-                    <li><a href="#contact" class="nav-link">CONTACT</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <div class="founder-section">
-        <h2 style="color: #39ff14; text-align: center;">Meet our Founders</h2>
-  <div class="founder-card">
-    <img src="./Assets/images/moses.jpg" alt="Founder Photo" class="founder-image">
-    <div class="founder-info">
-      <h3 class="founder-name">Pallem Moses</h3>
-      <p class="founder-role">Founder & CEO</p>
-      <p class="founder-desc">
-        With a vision to revolutionize technology, Moses leads Metabyte with expertise in software development and business strategy.
-    </p>
-    </div>
-  </div>
-
-  <div class="founder-card">
-    <img src="./Assets/images/revanth1.jpg" alt="Founder Photo" class="founder-image">
-    <div class="founder-info">
-      <h3 class="founder-name">Akula Reavnth Sai</h3>
-      <p class="founder-role">Co-Founder & CTO</p>
-      <p class="founder-desc">
-        Revanth is the tech mastermind behind Metabyte, driving innovation in web development, AI, and digital transformation.
-      </p>
-    </div>
-  </div>
-
-  <div class="founder-card">
-    <img src="./Assets/images/prudhvi.jpg" alt="Founder Photo" class="founder-image">
-    <div class="founder-info">
-      <h3 class="founder-name">Borra Prudhvi Charan</h3>
-      <p class="founder-role">Co-Founder & Managing Director</p>
-      <p class="founder-desc">
-        Prudhvi is focused on integrating emerging technologies to help businesses scale efficiently.
-      </p>
-    </div>
-  </div>
-</div>
-
-    <footer>
-  <div class="footer-container">
-<section id="contact">
-    <a href="tel:+919494584396" class="footer-link">
-              <i class="fa-solid fa-phone"></i> +91 94945 84396
-          </a>
-          <a href="https://www.instagram.com/metabyte_technologies?igsh=MXFoazBsZmF1b3ZiZw==" target="_blank" class="footer-link">
-              <i class="fa-brands fa-instagram"></i> Instagram
-          </a>
-          <a href="https://wa.me/919494584396" target="_blank" class="footer-link">
-              <i class="fa-brands fa-whatsapp"></i> WhatsApp
-          </a>
-          <a href="https://www.linkedin.com/posts/metabyte-technologies-it-solutions_hiring-sales-marketing-activity-7297224040862072832-eNYl?utm_source=share&utm_medium=member_ios&rcm=ACoAAEEl7L8BfnbSodO26IzC_SWHoWUtxvdivgo" target="_blank" class="footer-link">
-              <i class="fa-brands fa-linkedin"></i> LinkedIn
-          </a>
-          <a href="mailto:metabytet@gmail.com" class="footer-link">
-              <i class="fa-solid fa-envelope"></i> metabytet@gmail.com
-          </a>
-      </div>
-      <p>&copy; 2025 Metabyte AI. All rights reserved.</p>
-    </section>
-  </div>
-</footer>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
 
     <script>
-      // Toggle mobile navbar
-document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById("menu-toggle");
-    const links = document.getElementById("navbar-links");
+        (function() {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'light') {
+                document.documentElement.classList.add('light-mode');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div class="scroll-progress-bar"></div>
 
-    toggle.addEventListener("click", () => {
-        links.classList.toggle("show");
-    });
-});
+    <div id="app-content">
+        <header>
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <div class="navbar-logo">
+                        <a href="index.html" style="text-decoration: none;" class="logo-flex">
+                          <img src="./Assets/images/logo1.png" alt="Metabyte Logo" class="logo-img">
+                          <img src="./Assets/images/logo2.png" alt="Metabyte Logo" class="logo-img-small">
+                        </a>
+                    </div>
+                    <div class="menu-toggle" id="menu-toggle">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <ul class="navbar-links" id="navbar-links">
+                        <li><a href="index.html" class="nav-link">HOME</a></li>
+                        <li><a href="index.html#services-section" class="nav-link">SERVICES</a></li>
+                        <li><a href="about_us.html" class="nav-link">ABOUT US</a></li>
+                        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                        <li>
+                            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode">
+                                <div class="theme-icon-container">
+                                    <span class="theme-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                                    </span>
+                                    <span class="theme-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                                    </span>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="about-hero">
+            <h1 class="about-hero-title section-heading">The Story Behind the Innovation</h1>
+            <p class="about-hero-subtitle">Metabyte AI was founded on the principle that technology should be a powerful, accessible tool for growth. We are a team of innovators, developers, and strategists passionate about building the future of digital solutions, one line of code at a time.</p>
+        </section>
+
+        <section class="founder-section">
+            <h2 class="section-heading">Meet Our Founders</h2>
+            <div class="founder-grid">
+                <div class="founder-card">
+                    <img src="./Assets/images/moses.jpg" alt="Pallem Moses Photo" class="founder-image">
+                    <div class="founder-info">
+                        <h3 class="founder-name">Pallem Moses</h3>
+                        <p class="founder-role">Founder & CEO</p>
+                        <p class="founder-desc">With a vision to revolutionize technology, Moses leads Metabyte with expertise in software development and business strategy.</p>
+                        <div class="founder-socials">
+                            <a href="#" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="founder-card">
+                    <img src="./Assets/images/revanth1.jpg" alt="Akula Revanth Sai Photo" class="founder-image">
+                    <div class="founder-info">
+                        <h3 class="founder-name">Akula Revanth Sai</h3>
+                        <p class="founder-role">Co-Founder & CTO</p>
+                        <p class="founder-desc">Revanth is the tech mastermind behind Metabyte, driving innovation in web development, AI, and digital transformation.</p>
+                        <div class="founder-socials">
+                            <a href="#" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="founder-card">
+                    <img src="./Assets/images/prudhvi.jpg" alt="Borra Prudhvi Charan Photo" class="founder-image">
+                    <div class="founder-info">
+                        <h3 class="founder-name">Borra Prudhvi Charan</h3>
+                        <p class="founder-role">Co-Founder & Managing Director</p>
+                        <p class="founder-desc">Prudhvi is focused on integrating emerging technologies to help businesses scale efficiently.</p>
+                        <div class="founder-socials">
+                            <a href="#" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="footer-container">
+                <div class="footer-main">
+                    <div class="footer-column footer-column-brand">
+                        <a href="index.html" class="footer-logo">
+                            <img src="./Assets/images/logo1.png" alt="Metabyte Logo Icon">
+                            <img src="./Assets/images/logo2.png" alt="Metabyte AI Text Logo" class="footer-logo-text">
+                        </a>
+                        <p class="footer-tagline">Innovate. Build. Scale.<br>The Future of Digital Solutions.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#services-section">Services</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact Us</h4>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+919494584396">+91 94945 84396</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:metabytet@gmail.com">metabytet@gmail.com</a>
+                        </div>
+                        <div class="footer-socials">
+                            <a href="https://www.instagram.com/metabyte_technologies" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/919494584396" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/company/metabyte-technologies-it-solutions" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Metabyte AI. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Theme Toggler
+            const themeToggle = document.getElementById('theme-toggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    document.documentElement.classList.toggle('light-mode');
+                    if (document.documentElement.classList.contains('light-mode')) {
+                        localStorage.setItem('theme', 'light');
+                    } else {
+                        localStorage.setItem('theme', 'dark');
+                    }
+                });
+            }
+
+            // Section Fade-in on Scroll
+            const sections = document.querySelectorAll("section");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("fade-in");
+                    }
+                });
+            }, { threshold: 0.1 });
+            sections.forEach(section => observer.observe(section));
+
+            // Mobile Navbar Toggle
+            const toggle = document.getElementById("menu-toggle");
+            const links = document.getElementById("navbar-links");
+            if (toggle) {
+                toggle.addEventListener("click", () => {
+                    links.classList.toggle("show");
+                });
+            }
+            
+            // Scroll Progress Bar Logic
+            const progressBar = document.querySelector('.scroll-progress-bar');
+            const updateProgressBar = () => {
+                const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+                const scrollableHeight = scrollHeight - clientHeight;
+                const scrollPercentage = scrollableHeight > 0 ? (scrollTop / scrollableHeight) * 100 : 0;
+                if (progressBar) {
+                    progressBar.style.width = `${scrollPercentage}%`;
+                }
+            };
+            window.addEventListener('scroll', updateProgressBar);
+        });
     </script>
 </body>
 </html>
